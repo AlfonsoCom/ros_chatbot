@@ -1,0 +1,708 @@
+[
+  {
+    "text": "have a nice day",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.7924951314926147,
+        "value": "nice day",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tnk",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7869865894317627,
+        "value": "tnk",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i wholeheartedly appreciate",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 2,
+        "end": 16,
+        "confidence_entity": 0.9993261098861694,
+        "value": "wholeheartedly",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 17,
+        "end": 27,
+        "confidence_entity": 0.8756003975868225,
+        "value": "appreciate",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "good afternoon",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.5646145939826965,
+        "value": "afternoon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hola",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.7981559038162231,
+        "value": "hola",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "helllo bot",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.5078549385070801,
+        "value": "helllo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hi sweety",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 3,
+        "end": 9,
+        "confidence_entity": 0.5229814648628235,
+        "value": "sweety",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you modify the number of cookies to two?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "cookies",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "value": "two",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9996236562728882,
+        "value": "cookies",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.9986670017242432,
+        "value": "two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can u modify the soup to one?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 21,
+        "value": "soup",
+        "entity": "item_name"
+      },
+      {
+        "start": 25,
+        "end": 28,
+        "value": "one",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.9996306896209717,
+        "value": "one",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "upgrade cheese to nine",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "cheese",
+        "entity": "item_name"
+      },
+      {
+        "start": 18,
+        "end": 22,
+        "value": "nine",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i don't want rye",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "rye",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i dont need eight tuna sandwich",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "eight",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 18,
+        "end": 31,
+        "value": "tuna sandwich",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.9975215792655945,
+        "value": "eight",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.9582720398902893,
+        "value": "sandwich",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we need some pizza margherita for tonight",
+    "entities": [
+      {
+        "start": 13,
+        "end": 29,
+        "value": "pizza margherita",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9642103910446167,
+        "value": "pizza",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 34,
+        "end": 41,
+        "confidence_entity": 0.9903210997581482,
+        "value": "tonight",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bot, add chicken please",
+    "entities": [
+      {
+        "start": 9,
+        "end": 16,
+        "value": "chicken",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 9,
+        "end": 23,
+        "confidence_entity": 0.9204661846160889,
+        "value": "chicken please",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "add 10 ice cream",
+    "entities": [
+      {
+        "start": 4,
+        "end": 6,
+        "value": "10",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 7,
+        "end": 16,
+        "value": "ice cream",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 4,
+        "end": 16,
+        "confidence_entity": 0.9944542050361633,
+        "value": "10 ice cream",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "add eight cherries",
+    "entities": [
+      {
+        "start": 4,
+        "end": 9,
+        "value": "eight",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 10,
+        "end": 18,
+        "value": "cherries",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 4,
+        "end": 18,
+        "confidence_entity": 0.9838427305221558,
+        "value": "eight cherries",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "add cottage cheese in my list",
+    "entities": [
+      {
+        "start": 4,
+        "end": 18,
+        "value": "cottage cheese",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "remember to add blue berries",
+    "entities": [
+      {
+        "start": 16,
+        "end": 28,
+        "value": "blue berries",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5580617785453796,
+        "value": "remember",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 16,
+        "end": 28,
+        "confidence_entity": 0.9871134757995605,
+        "value": "blue berries",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "i want five banana",
+    "entities": [
+      {
+        "start": 7,
+        "end": 11,
+        "value": "five",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 12,
+        "end": 18,
+        "value": "banana",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.9996918439865112,
+        "value": "banana",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Last thing, add 2 bottles of milk",
+    "entities": [
+      {
+        "start": 16,
+        "end": 17,
+        "value": "2",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 18,
+        "end": 33,
+        "value": "bottles of milk",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9998871088027954,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.9820103049278259,
+        "value": "milk",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "five",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "five",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9982946515083313,
+        "value": "five",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "haddock",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "haddock",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "forty",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "forty",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.964562177658081,
+        "value": "forty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sunflower seed oil",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "sunflower seed oil",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9444422721862793,
+        "value": "sunflower",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9996242523193359,
+        "value": "oil",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "instant coffee",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "instant coffee",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9895958304405212,
+        "value": "coffee",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "toast",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "toast",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rye bread",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "rye bread",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.9990106821060181,
+        "value": "bread",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Italian dressing",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Italian dressing",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9994268417358398,
+        "value": "dressing",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fifty",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "fifty",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.874875009059906,
+        "value": "fifty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "link sausages",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "link sausages",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 5,
+        "end": 13,
+        "confidence_entity": 0.9986851811408997,
+        "value": "sausages",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "orange juice",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "orange juice",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 7,
+        "end": 12,
+        "confidence_entity": 0.997995138168335,
+        "value": "juice",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "avocado",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "avocado",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Russian dressing",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Russian dressing",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 8,
+        "end": 16,
+        "confidence_entity": 0.9993112087249756,
+        "value": "dressing",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "three",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "three",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

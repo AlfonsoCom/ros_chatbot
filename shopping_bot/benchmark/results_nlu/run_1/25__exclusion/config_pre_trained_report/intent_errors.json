@@ -1,0 +1,66 @@
+[
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.18290605161478837
+    }
+  },
+  {
+    "text": "tnk",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6318060334372226
+    }
+  },
+  {
+    "text": "change pears to six",
+    "intent": "update",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.6172240051365456
+    }
+  },
+  {
+    "text": "i dont need eight tuna sandwich",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.4428418253539258
+    }
+  },
+  {
+    "text": "eliminate 12 sweet cherry",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.6324401870187685
+    }
+  },
+  {
+    "text": "whortleberry",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6855012618677839
+    }
+  },
+  {
+    "text": "fow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6129168845043873
+    }
+  },
+  {
+    "text": "nineteeen",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6855012618677839
+    }
+  }
+]

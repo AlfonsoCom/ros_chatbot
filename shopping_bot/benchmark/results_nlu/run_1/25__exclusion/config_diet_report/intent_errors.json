@@ -1,0 +1,90 @@
+[
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "show",
+      "confidence": 0.7162083983421326
+    }
+  },
+  {
+    "text": "hola",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999946355819702
+    }
+  },
+  {
+    "text": "hi sweety",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Edit apples at two",
+    "intent": "update",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.566524088382721
+    }
+  },
+  {
+    "text": "buy 16 chocolate chip cake",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "i want five banana",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.9998254179954529
+    }
+  },
+  {
+    "text": "spaghetti",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9979444742202759
+    }
+  },
+  {
+    "text": "haddock",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.5633071064949036
+    }
+  },
+  {
+    "text": "instant coffee",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9999899864196777
+    }
+  },
+  {
+    "text": "fow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4098896384239197
+    }
+  },
+  {
+    "text": "gravy",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.9843277931213379
+    }
+  }
+]

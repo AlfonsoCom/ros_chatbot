@@ -1,0 +1,122 @@
+[
+  {
+    "text": "adios",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.999942421913147
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "show",
+      "confidence": 0.5784986019134521
+    }
+  },
+  {
+    "text": "tnk",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999994039535522
+    }
+  },
+  {
+    "text": "i wholeheartedly appreciate",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.8332363963127136
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9924376606941223
+    }
+  },
+  {
+    "text": "hola",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hi sweety",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Edit apples at two",
+    "intent": "update",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9187641739845276
+    }
+  },
+  {
+    "text": "i dont need eight tuna sandwich",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9635014533996582
+    }
+  },
+  {
+    "text": "i want five banana",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.988737940788269
+    }
+  },
+  {
+    "text": "append bay leaf",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "haddock",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.6717808246612549
+    }
+  },
+  {
+    "text": "instant coffee",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9998907446861267
+    }
+  },
+  {
+    "text": "fow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "show",
+      "confidence": 0.6541701555252075
+    }
+  },
+  {
+    "text": "marshmallow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9999873638153076
+    }
+  }
+]

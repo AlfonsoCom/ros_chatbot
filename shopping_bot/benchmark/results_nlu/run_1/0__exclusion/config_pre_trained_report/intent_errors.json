@@ -1,0 +1,58 @@
+[
+  {
+    "text": "tnk",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4379694308957723
+    }
+  },
+  {
+    "text": "take out salted fish",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.4703588474857097
+    }
+  },
+  {
+    "text": "i dont need eight tuna sandwich",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.5144953565441376
+    }
+  },
+  {
+    "text": "eliminate 12 sweet cherry",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.5924648818565044
+    }
+  },
+  {
+    "text": "whortleberry",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7270136307244549
+    }
+  },
+  {
+    "text": "fow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.41628920800275176
+    }
+  },
+  {
+    "text": "nineteeen",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7270136307244549
+    }
+  }
+]

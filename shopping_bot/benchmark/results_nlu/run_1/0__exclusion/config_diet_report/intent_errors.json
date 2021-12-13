@@ -1,0 +1,66 @@
+[
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "show",
+      "confidence": 0.9974150061607361
+    }
+  },
+  {
+    "text": "hy",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hola",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hi sweety",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Edit apples at two",
+    "intent": "update",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.6035850048065186
+    }
+  },
+  {
+    "text": "i dont need eight tuna sandwich",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9999984502792358
+    }
+  },
+  {
+    "text": "haddock",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.4082503318786621
+    }
+  },
+  {
+    "text": "instant coffee",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9989364743232727
+    }
+  }
+]

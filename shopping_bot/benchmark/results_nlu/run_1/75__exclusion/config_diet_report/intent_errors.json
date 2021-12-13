@@ -1,0 +1,162 @@
+[
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9987069964408875
+    }
+  },
+  {
+    "text": "tnk",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9979560375213623
+    }
+  },
+  {
+    "text": "i wholeheartedly appreciate",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9975239634513855
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9177625775337219
+    }
+  },
+  {
+    "text": "hola",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9628468751907349
+    }
+  },
+  {
+    "text": "hi sweety",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8954269886016846
+    }
+  },
+  {
+    "text": "take out salted fish",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7213720679283142
+    }
+  },
+  {
+    "text": "delete two chocolate cookie",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9556771516799927
+    }
+  },
+  {
+    "text": "bot Add some biscuits",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.5543007850646973
+    }
+  },
+  {
+    "text": "bot, add chicken please",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.6926091909408569
+    }
+  },
+  {
+    "text": "buy 16 chocolate chip cake",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999985694885254
+    }
+  },
+  {
+    "text": "i want five banana",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.9943693280220032
+    }
+  },
+  {
+    "text": "Last thing, add 2 bottles of milk",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4842100441455841
+    }
+  },
+  {
+    "text": "hamburger bun",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9997265934944153
+    }
+  },
+  {
+    "text": "chicken leg",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.971449613571167
+    }
+  },
+  {
+    "text": "fow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.7384377717971802
+    }
+  },
+  {
+    "text": "apple tart",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9997186064720154
+    }
+  },
+  {
+    "text": "oat flakes",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "remove",
+      "confidence": 0.8545072078704834
+    }
+  },
+  {
+    "text": "marshmallow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.9995376467704773
+    }
+  },
+  {
+    "text": "nineteeen",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.8688126802444458
+    }
+  }
+]

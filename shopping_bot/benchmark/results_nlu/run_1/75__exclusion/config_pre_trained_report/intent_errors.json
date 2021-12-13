@@ -1,0 +1,114 @@
+[
+  {
+    "text": "adios",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4200490978302963
+    }
+  },
+  {
+    "text": "Goodbye bot!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.43185697916658894
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.2762203066270664
+    }
+  },
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.18647789424313924
+    }
+  },
+  {
+    "text": "tnk",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4404094646591962
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.24368359757649963
+    }
+  },
+  {
+    "text": "upgrade cheese to nine",
+    "intent": "update",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.42609287961807557
+    }
+  },
+  {
+    "text": "i dont need eight tuna sandwich",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.450469720352948
+    }
+  },
+  {
+    "text": "delete two chocolate cookie",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.5039547507624673
+    }
+  },
+  {
+    "text": "can you add cheese. I need 3 of that",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.3891347668070233
+    }
+  },
+  {
+    "text": "buy 16 chocolate chip cake",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.43894968688298863
+    }
+  },
+  {
+    "text": "Last thing, add 2 bottles of milk",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.27995905321183767
+    }
+  },
+  {
+    "text": "whortleberry",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4831281219037168
+    }
+  },
+  {
+    "text": "nineteeen",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4831281219037168
+    }
+  }
+]

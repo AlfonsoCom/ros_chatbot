@@ -1,0 +1,66 @@
+[
+  {
+    "text": "whortleberry",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8649335542011224
+    }
+  },
+  {
+    "text": "toffy",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8649335542011224
+    }
+  },
+  {
+    "text": "nineteeen",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8649335542011224
+    }
+  },
+  {
+    "text": "Update",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.917994546792385
+    }
+  },
+  {
+    "text": "ciobar",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8649335542011224
+    }
+  },
+  {
+    "text": "twentythree",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8649335542011224
+    }
+  },
+  {
+    "text": "Can i play football outside?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.30494860498089355
+    }
+  },
+  {
+    "text": "How  is the day, today?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.27804611234654325
+    }
+  }
+]

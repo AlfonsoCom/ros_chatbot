@@ -1,0 +1,310 @@
+[
+  {
+    "text": "have a nice day",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.9996519391145418,
+        "value": "nice day",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tnk",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.999999983058453,
+        "value": "tnk",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9999999967336066,
+        "value": "hy",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "good afternoon",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.9396314589801456,
+        "value": "afternoon",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hola",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999999993444083,
+        "value": "hola",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hi sweety",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 3,
+        "end": 9,
+        "confidence_entity": 0.6932459533846134,
+        "value": "sweety",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want modify the quantity of fries to 8",
+    "entities": [
+      {
+        "start": 39,
+        "end": 40,
+        "value": "8",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9992684422732938,
+        "value": "fries",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 39,
+        "end": 40,
+        "confidence_entity": 1.0,
+        "value": "8",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you modify the number of cookies to two?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "cookies",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "value": "two",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.7500431069545115,
+        "value": "cookies",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.9999999999995761,
+        "value": "two",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Can you update the blue raspberry to nineteen?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "blue raspberry",
+        "entity": "item_name"
+      },
+      {
+        "start": 37,
+        "end": 45,
+        "value": "nineteen",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 24,
+        "end": 33,
+        "confidence_entity": 0.9999925888629976,
+        "value": "raspberry",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 37,
+        "end": 45,
+        "confidence_entity": 0.9999999999999998,
+        "value": "nineteen",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "take out salted fish",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "salted fish",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 1.0,
+        "value": "fish",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "we need some pizza margherita for tonight",
+    "entities": [
+      {
+        "start": 13,
+        "end": 29,
+        "value": "pizza margherita",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9888232900670627,
+        "value": "pizza",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_name",
+        "start": 30,
+        "end": 41,
+        "confidence_entity": 0.9998274183139928,
+        "value": "for tonight",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "caramels",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "caramels",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999997274143071,
+        "value": "caramels",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "rye bread",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "rye bread",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.9999999999992389,
+        "value": "bread",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "fifty",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "fifty",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9999072856596911,
+        "value": "fifty",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "herring",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "herring",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "text": "i wholeheartedly appreciate",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 2,
+        "end": 16,
+        "confidence_entity": 0.9820453524589539,
+        "value": "wholeheartedly",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9978589415550232,
+        "value": "hy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hola",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8882991671562195,
+        "value": "hola",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hi sweety",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 3,
+        "end": 9,
+        "confidence_entity": 0.9584038257598877,
+        "value": "sweety",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "modify",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.863688588142395,
+        "value": "modify",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want modify the quantity of fries to 8",
+    "entities": [
+      {
+        "start": 39,
+        "end": 40,
+        "value": "8",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9922624826431274,
+        "value": "fries",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 39,
+        "end": 40,
+        "confidence_entity": 0.9999309778213501,
+        "value": "8",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you modify the number of cookies to two?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "cookies",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "value": "two",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9951913356781006,
+        "value": "cookies",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.9999091625213623,
+        "value": "two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Edit apples at two",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "apples",
+        "entity": "item_name"
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "value": "two",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8865824937820435,
+        "value": "Edit",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.7100778222084045,
+        "value": "apples at",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9985820055007935,
+        "value": "two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you update the blue raspberry to nineteen?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 33,
+        "value": "blue raspberry",
+        "entity": "item_name"
+      },
+      {
+        "start": 37,
+        "end": 45,
+        "value": "nineteen",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.5759685635566711,
+        "value": "blue",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 37,
+        "end": 45,
+        "confidence_entity": 0.9991888403892517,
+        "value": "nineteen",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "we need some pizza margherita for tonight",
+    "entities": [
+      {
+        "start": 13,
+        "end": 29,
+        "value": "pizza margherita",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9993720650672913,
+        "value": "pizza",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 19,
+        "end": 29,
+        "confidence_entity": 0.8982710242271423,
+        "value": "margherita",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9886894822120667,
+        "value": "for",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you add cheese. I need 3 of that",
+    "entities": [
+      {
+        "start": 12,
+        "end": 18,
+        "value": "cheese",
+        "entity": "item_name"
+      },
+      {
+        "start": 27,
+        "end": 28,
+        "value": "3",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 27,
+        "end": 28,
+        "confidence_entity": 0.9999744892120361,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Last thing, add 2 bottles of milk",
+    "entities": [
+      {
+        "start": 16,
+        "end": 17,
+        "value": "2",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 18,
+        "end": 33,
+        "value": "bottles of milk",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.9999902248382568,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.9342246055603027,
+        "value": "milk",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "haddock",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "haddock",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "caramels",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "caramels",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9999428987503052,
+        "value": "caramels",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "instant coffee",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "instant coffee",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.9994775652885437,
+        "value": "coffee",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

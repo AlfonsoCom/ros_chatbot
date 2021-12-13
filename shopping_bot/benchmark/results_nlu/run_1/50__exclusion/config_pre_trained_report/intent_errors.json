@@ -1,0 +1,74 @@
+[
+  {
+    "text": "adios",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5349677191843017
+    }
+  },
+  {
+    "text": "Goodbye bot!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5150896143804108
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.227106589845529
+    }
+  },
+  {
+    "text": "see you later",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "show",
+      "confidence": 0.2643559655995158
+    }
+  },
+  {
+    "text": "tnk",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5236630988444603
+    }
+  },
+  {
+    "text": "eliminate 12 sweet cherry",
+    "intent": "remove",
+    "intent_prediction": {
+      "name": "add",
+      "confidence": 0.4735116811366081
+    }
+  },
+  {
+    "text": "can you add cheese. I need 3 of that",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "update",
+      "confidence": 0.3878327822026059
+    }
+  },
+  {
+    "text": "append bay leaf",
+    "intent": "add",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4701199550440941
+    }
+  },
+  {
+    "text": "fow",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.39845339739616864
+    }
+  }
+]

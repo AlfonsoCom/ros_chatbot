@@ -1,0 +1,263 @@
+version: "2.0"
+stories:
+- story: Rem st 2 (./tests/test_stories.yml)
+  steps:
+  - intent: remove
+    entities:
+    - item_name: white potatoes
+  - slot_was_set:
+    - item_name: white potatoes
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+- story: Rem st 3 (./tests/test_stories.yml)
+  steps:
+  - intent: remove
+    entities:
+    - item_quantity: '65'
+  - slot_was_set:
+    - item_quantity: '65'
+  - action: items_form
+  - active_loop: items_form
+  - slot_was_set:
+    - item_name: Broccoli
+  - active_loop: null
+  - action: action_remove
+- story: Upd st 2 (./tests/test_stories.yml)
+  steps:
+  - intent: update
+    entities:
+    - item_name: white potatoes
+  - slot_was_set:
+    - item_name: white potatoes
+  - action: items_form
+  - active_loop: items_form
+  - slot_was_set:
+    - item_quantity: '10'
+  - active_loop: null
+  - action: action_update
+- story: Upd st 3 (./tests/test_stories.yml)
+  steps:
+  - intent: update  # predicted: inform: Change [65](item_quantity)
+    entities:
+    - item_quantity: '65'
+  - slot_was_set:
+    - item_quantity: '65'
+  - action: items_form
+  - active_loop: items_form
+  - slot_was_set:
+    - item_name: Broccoli
+  - active_loop: null
+  - action: action_update
+- story: Complete 1 (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: update  # predicted: inform: Change [65](item_quantity)
+    entities:
+    - item_quantity: '65'
+  - slot_was_set:
+    - item_quantity: '65'
+  - action: items_form
+  - active_loop: items_form
+  - slot_was_set:
+    - item_name: Broccoli
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_update
+  - intent: thank_you
+  - action: utter_noworries
+- story: St5_remove_non_completa (./tests/test_stories.yml)
+  steps:
+  - intent: remove  # predicted: update: I want to remove the [apples](item_name) from my [cart](item_name)
+    entities:
+    - item_name: apples
+  - slot_was_set:
+    - item_name: apples
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+- story: st8_show_e_remove (./tests/test_stories.yml)
+  steps:
+  - intent: show
+  - action: action_show
+  - intent: remove  # predicted: nlu_fallback: Ok, now i want to remove [five](item_quantity) [eggs](item_name)
+    entities:
+    - item_quantity: five
+    - item_name: eggs
+  - slot_was_set:
+    - item_quantity: five
+  - slot_was_set:
+    - item_name: eggs
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+- story: St4 (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: show
+  - action: action_show
+  - intent: update
+    entities:
+    - item_quantity: '2'
+    - item_name: bottles of water
+  - slot_was_set:
+    - item_quantity: '2'
+  - slot_was_set:
+    - item_name: bottles of water
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_update
+  - slot_was_set:
+    - item_name: null
+  - slot_was_set:
+    - item_quantity: null
+  - intent: thank_you  # predicted: nlu_fallback: Ok bot, thank u!
+  - action: utter_noworries
+- story: St5 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: Hello friends!
+  - action: utter_greet
+  - intent: remove  # predicted: add: Mhhh ok, I want to remove [forty-one](item_quantity) bottles of water.
+    entities:
+    - item_quantity: forty-one
+  - slot_was_set:
+    - item_quantity: forty-one
+  - slot_was_set:
+    - item_name: bottles of water
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+  - slot_was_set:
+    - item_name: null
+  - slot_was_set:
+    - item_quantity: null
+  - intent: thank_you  # predicted: nlu_fallback: Ok bot, thank u!
+  - action: utter_noworries
+- story: St7 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: Hey my friend!
+  - action: utter_greet
+  - intent: show
+  - action: action_show
+  - intent: remove  # predicted: update: Perfect, I have decided to delete from list [2](item_quantity) almond. Can you do that?
+    entities:
+    - item_quantity: '2'
+  - slot_was_set:
+    - item_quantity: '2'
+  - slot_was_set:
+    - item_name: almond
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+  - slot_was_set:
+    - item_name: null
+  - slot_was_set:
+    - item_quantity: null
+  - intent: thank_you  # predicted: nlu_fallback: Ok bot, thank u!
+  - action: utter_noworries
+- story: inform first (./tests/test_stories.yml)
+  steps:
+  - intent: inform
+    entities:
+    - item_name: potatoes
+  - slot_was_set:
+    - item_name: potatoes
+  - action: utter_intent
+  - intent: remove
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+  - slot_was_set:
+    - item_name: null
+  - slot_was_set:
+    - item_quantity: null
+  - intent: thank_you  # predicted: nlu_fallback: Ok bot, thank u!
+  - action: utter_noworries
+- story: inform first n (./tests/test_stories.yml)
+  steps:
+  - intent: inform
+    entities:
+    - item_quantity: '43'
+  - slot_was_set:
+    - item_quantity: '43'
+  - action: utter_intent
+  - intent: update
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_update
+  - slot_was_set:
+    - item_name: null
+  - slot_was_set:
+    - item_quantity: null
+  - intent: thank_you  # predicted: nlu_fallback: Ok bot, thank u!
+  - action: utter_noworries
+- story: St3 (./tests/test_stories.yml)
+  steps:
+  - intent: remove  # predicted: update: eliminate [5](item_quantity) [blue raspberry](item_name) in my list
+    entities:
+    - item_quantity: '5'
+    - item_name: blue raspberry
+  - slot_was_set:
+    - item_quantity: '5'
+  - slot_was_set:
+    - item_name: blue raspberry
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+- story: St7 (./tests/test_stories.yml)
+  steps:
+  - intent: greet  # predicted: nlu_fallback: Good evening!
+  - action: utter_greet
+  - intent: add
+    entities:
+    - item_quantity: '4'
+    - item_name: pineapple
+  - slot_was_set:
+    - item_quantity: '4'
+  - slot_was_set:
+    - item_name: pineapple
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_add
+  - intent: update
+    entities:
+    - item_name: cookies
+    - item_quantity: three
+  - slot_was_set:
+    - item_quantity: three
+  - slot_was_set:
+    - item_name: cookies
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_update
+- story: St8 (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: remove
+    entities:
+    - item_quantity: six
+    - item_name: banana
+  - slot_was_set:
+    - item_quantity: six
+  - slot_was_set:
+    - item_name: banana
+  - action: items_form
+  - active_loop: items_form
+  - active_loop: null
+  - action: action_remove
+  - intent: thank_you  # predicted: inform: tnk!
+  - action: utter_noworries

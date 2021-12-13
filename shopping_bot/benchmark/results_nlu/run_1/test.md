@@ -1,0 +1,231 @@
+## intent:goodbye
+- 
+- adios
+- Goodbye bot!
+- have a nice day
+- see you later
+
+## intent:thank_you
+- 
+- oh thank you
+- tnk
+- i wholeheartedly appreciate
+- thank u
+
+## intent:show
+- Please display the list
+- Can i see my list, please?
+- show list
+- show my list
+- I want see my list, can yuou show me that?
+- show my list please
+
+## intent:greet
+- hy
+- hy bot!
+- good afternoon
+- hola
+- helllo bot
+- hi sweety
+- hello
+
+## intent:update
+- modify
+- I want modify the quantity of fries to [8](item_quantity)
+- Modify the quantity of [apples](item_name) to [two](item_quantity)
+- can you modify the number of [cookies](item_quantity) to [two](item_quantity)?
+- can u modify the [soup](item_name) to [one](item_quantity)?
+- update [apples](item_name) to [two](item_quantity).
+- Edit [apples](item_name) at [two](item_quantity)
+- i want update
+- 
+- Can you update the [blue raspberry](item_name) to [nineteen](item_quantity)?
+- upgrade [cheese](item_name) to [nine](item_quantity)
+- 
+- 
+- change [pears](item_name) to [six](item_quantity)
+
+## intent:remove
+- i don't want [rye](item_name)
+- remove
+- take out [salted fish](item_name)
+- i dont need [eight](item_quantity) [tuna sandwich](item_name)
+- 
+- 
+- 
+- 
+- now remove [kiwi](item_name)
+- eliminate [12](item_quantity) [sweet cherry](item_name)
+- delete [two](item_quantity) [chocolate cookie](item_name)
+- 
+
+## intent:add
+- 
+- we need some [pizza margherita](item_name) for tonight
+- add [2](item_quantity) [apples](item_name)
+- bot Add some [biscuits](item_name)
+- bot, add [chicken](item_name) please
+- can you add [cheese](item_name). I need [3](item_quantity) of that
+- 
+- add [10](item_quantity) [ice cream](item_name)
+- 
+- buy [16](item_quantity) [chocolate chip cake](item_name)
+- Add [2](item_quantity)
+- 
+- 
+- add [eight](item_quantity) [cherries](item_name)
+- add [cottage cheese](item_name) in my list
+- 
+- 
+- insert
+- remember to add [blue berries](item_name)
+- i want [five](item_quantity) [banana](item_name)
+- append [bay leaf](item_name)
+- Last thing, add [2](item_quantity) [bottles of milk](item_name)
+
+## intent:inform
+- [rhubarb pie](item_name)
+- [canned vegetables](item_name)
+- [forty-six](item_quantity)
+- [spaghetti](item_name)
+- [wine](item_name)
+- [twenty-five](item_quantity)
+- [eighty-one](item_quantity)
+- [83](item_quantity)
+- [whortleberry](item_name)
+- [twenty-one](item_quantity)
+- [mutton](item_name)
+- [ship biscuit](item_name)
+- [sea bass](item_name)
+- [24](item_quantity)
+- [cereal](item_name)
+- [vermicelli](item_name)
+- [gin](item_name)
+- [98](item_quantity)
+- [condiment](item_name)
+- [eighty-nine](item_quantity)
+- [pies](item_name)
+- [sharp cheese](item_name)
+- [candy bar](item_name)
+- [seventy-five](item_quantity)
+- [biscuit](item_name)
+- [liqueur](item_name)
+- [five](item_quantity)
+- [haddock](item_name)
+- [Parmesan](item_name)
+- [chili pepper](item_name)
+- [popsicle](item_name)
+- [60](item_quantity)
+- [lamb chop](item_name)
+- [garlic](item_name)
+- [forty](item_quantity)
+- [sixty-eight](item_quantity)
+- [mincemeat pie](item_name)
+- [noodles](item_name)
+- [pomegranate](item_name)
+- [marinated herring](item_name)
+- [100](item_quantity)
+- [grated cheese](item_name)
+- [sunflower seed oil](item_name)
+- [homemade cheese](item_name)
+- [ninety-nine](item_quantity)
+- [hazelnuts](item_name)
+- [apple juice](item_name)
+- [22](item_quantity)
+- [frankfurters](item_name)
+- [hamburger bun](item_name)
+- [pork chop](item_name)
+- [thirty-nine](item_quantity)
+- [71](item_quantity)
+- [caramels](item_name)
+- [chicken leg](item_name)
+- [oysters](item_name)
+- [Brussels sprouts](item_name)
+- [cinnamon roll](item_name)
+- [instant coffee](item_name)
+- [cinnamon](item_name)
+- [pie](item_name)
+- [macaroni](item_name)
+- [26](item_quantity)
+- [fow](item_name)
+- [cherry pie](item_name)
+- [toast](item_name)
+- [sesame roll](item_name)
+- [49](item_quantity)
+- [candies](item_name)
+- [73](item_quantity)
+- [plum](item_name)
+- [greens](item_name)
+- [fifty-two](item_quantity)
+- [eggplant](item_name)
+- [crouton](item_name)
+- [apple tart](item_name)
+- [14](item_quantity)
+- [rye bread](item_name)
+- [hot sauce](item_name)
+- [chocolates](item_name)
+- [knish](item_name)
+- [popcorn](item_name)
+- [perch](item_name)
+- [chocolate frosting cake](item_name)
+- [20](item_quantity)
+- [forty-five](item_quantity)
+- [crawfish](item_name)
+- [63](item_quantity)
+- [tortilla](item_name)
+- 
+- [spaghetti sauce](item_name)
+- [pecans](item_name)
+- [sourdough bread](item_name)
+- [lemonade](item_name)
+- [oat flakes](item_name)
+- [seventy](item_quantity)
+- [green onions](item_name)
+- [Italian dressing](item_name)
+- [mayonnaise](item_name)
+- [lentil](item_name)
+- [barley](item_name)
+- [seventy-three](item_quantity)
+- [fig](item_name)
+- [lobster](item_name)
+- [gravy](item_name)
+- [forty-seven](item_quantity)
+- [marshmallow](item_name)
+- [seventy-one](item_quantity)
+- [fifty](item_quantity)
+- [link sausages](item_name)
+- [chocolate cookie](item_name)
+- [66](item_quantity)
+- [orange juice](item_name)
+- [herring](item_name)
+- [forty-three](item_quantity)
+- [bread](item_name)
+- [blackberry](item_name)
+- [95](item_quantity)
+- [cookie](item_name)
+- [pasta](item_name)
+- [eighty-seven](item_quantity)
+- [dip sauce](item_name)
+- [avocado](item_name)
+- [75](item_quantity)
+- [relish](item_name)
+- [dried apricots](item_name)
+- 
+- [salmon steak](item_name)
+- [nineteeen](item_quantity)
+- [2](item_quantity) [apples](item_name)
+- 
+- [64](item_quantity)
+- [margarine](item_name)
+- [Russian dressing](item_name)
+- [three](item_quantity)
+- [ale](item_name)
+- [58](item_quantity)
+- [46](item_quantity)
+- [cedar nuts](item_name)
+- [forty-two](item_quantity)
+- [68](item_quantity)
+- [soy sauce](item_name)
+- [artichoke](item_name)
+- [blueberry muffin](item_name)
+- [gooseberry](item_name)

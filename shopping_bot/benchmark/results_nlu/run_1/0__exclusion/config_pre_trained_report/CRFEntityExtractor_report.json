@@ -1,0 +1,38 @@
+{
+  "item_name": {
+    "precision": 0.9411764705882353,
+    "recall": 0.967032967032967,
+    "f1-score": 0.953929539295393,
+    "support": 182,
+    "confused_with": {
+      "item_quantity": 1
+    }
+  },
+  "item_quantity": {
+    "precision": 0.9797979797979798,
+    "recall": 0.9797979797979798,
+    "f1-score": 0.9797979797979798,
+    "support": 99,
+    "confused_with": {
+      "item_name": 2
+    }
+  },
+  "micro avg": {
+    "precision": 0.9545454545454546,
+    "recall": 0.9715302491103203,
+    "f1-score": 0.9629629629629629,
+    "support": 281
+  },
+  "macro avg": {
+    "precision": 0.9604872251931076,
+    "recall": 0.9734154734154734,
+    "f1-score": 0.9668637595466865,
+    "support": 281
+  },
+  "weighted avg": {
+    "precision": 0.9547833368222732,
+    "recall": 0.9715302491103203,
+    "f1-score": 0.9630433315009308,
+    "support": 281
+  }
+}

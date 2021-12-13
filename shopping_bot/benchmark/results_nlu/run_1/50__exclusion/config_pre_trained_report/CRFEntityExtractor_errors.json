@@ -1,0 +1,484 @@
+[
+  {
+    "text": "adios",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9987339971369722,
+        "value": "adios",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tnk",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9998995856754272,
+        "value": "tnk",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 2,
+        "confidence_entity": 0.9995127114847128,
+        "value": "hy",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hola",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9999842409323163,
+        "value": "hola",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hi sweety",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9992934967234977,
+        "value": "hi sweety",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "modify",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9735626142021349,
+        "value": "modify",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I want modify the quantity of fries to 8",
+    "entities": [
+      {
+        "start": 39,
+        "end": 40,
+        "value": "8",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9948723927686135,
+        "value": "fries",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 39,
+        "end": 40,
+        "confidence_entity": 1.0,
+        "value": "8",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you modify the number of cookies to two?",
+    "entities": [
+      {
+        "start": 29,
+        "end": 36,
+        "value": "cookies",
+        "entity": "item_quantity"
+      },
+      {
+        "start": 40,
+        "end": 43,
+        "value": "two",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 29,
+        "end": 36,
+        "confidence_entity": 0.9999919080400415,
+        "value": "cookies",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 40,
+        "end": 43,
+        "confidence_entity": 0.999993104029758,
+        "value": "two",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can u modify the soup to one?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 21,
+        "value": "soup",
+        "entity": "item_name"
+      },
+      {
+        "start": 25,
+        "end": 28,
+        "value": "one",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.9999999989524062,
+        "value": "one",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Edit apples at two",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "apples",
+        "entity": "item_name"
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "value": "two",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.8444590666906262,
+        "value": "Edit",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_name",
+        "start": 5,
+        "end": 11,
+        "confidence_entity": 0.9930986621946293,
+        "value": "apples",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.996043235219083,
+        "value": "two",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "upgrade cheese to nine",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "cheese",
+        "entity": "item_name"
+      },
+      {
+        "start": 18,
+        "end": 22,
+        "value": "nine",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9196591204616108,
+        "value": "upgrade cheese",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_quantity",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.9999652355802756,
+        "value": "nine",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "take out salted fish",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "salted fish",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.9999973340966878,
+        "value": "fish",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "we need some pizza margherita for tonight",
+    "entities": [
+      {
+        "start": 13,
+        "end": 29,
+        "value": "pizza margherita",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.8806051855934006,
+        "value": "pizza",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "bot, add chicken please",
+    "entities": [
+      {
+        "start": 9,
+        "end": 16,
+        "value": "chicken",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 9,
+        "end": 16,
+        "confidence_entity": 0.6171615429724907,
+        "value": "chicken",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you add cheese. I need 3 of that",
+    "entities": [
+      {
+        "start": 12,
+        "end": 18,
+        "value": "cheese",
+        "entity": "item_name"
+      },
+      {
+        "start": 27,
+        "end": 28,
+        "value": "3",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 27,
+        "end": 28,
+        "confidence_entity": 0.9999999999999983,
+        "value": "3",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "insert",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9990284374508056,
+        "value": "insert",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "remember to add blue berries",
+    "entities": [
+      {
+        "start": 16,
+        "end": 28,
+        "value": "blue berries",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 21,
+        "end": 28,
+        "confidence_entity": 0.9999963108739078,
+        "value": "berries",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "sunflower seed oil",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "sunflower seed oil",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 10,
+        "end": 18,
+        "confidence_entity": 0.9992394757419093,
+        "value": "seed oil",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "green onions",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "green onions",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_quantity",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9653869958293274,
+        "value": "green",
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "entity": "item_name",
+        "start": 6,
+        "end": 12,
+        "confidence_entity": 0.9999992254085697,
+        "value": "onions",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "fifty",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "fifty",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9664089494940976,
+        "value": "fifty",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "herring",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "herring",
+        "entity": "item_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "three",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "three",
+        "entity": "item_quantity"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "item_name",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.7411417040996194,
+        "value": "three",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]
