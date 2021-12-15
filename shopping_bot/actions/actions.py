@@ -13,7 +13,7 @@ import pathlib
 
 logging.getLogger(__name__)
 
-
+ONLY_BOT = False
 
 FILE_PATH = str(pathlib.Path(__file__).parent.resolve()) + "/../database/data.pk"
 
@@ -55,16 +55,21 @@ class ActionShow(Action):
         data = None
         
         data_all_user = load_data()
-        username = tracker.get_slot("username")
-        id = int(tracker.get_slot("slot_id"))
         
+        username = tracker.get_slot("username")
+        username = username.lower()
+        if not ONLY_BOT:
+            id = int(tracker.get_slot("slot_id"))
+        else:
+            id = hash_functions(username)
         if username is None:
             dispatcher.utter_message(text="Please give me your name") 
             return []
 
-        username = username.lower()
+        
         #id = hash_functions(username)
        
+        print(username,id,data_all_user)
 
         if data_all_user.get(id) is not None: #is not empty
             # Compose the show message
@@ -116,8 +121,11 @@ class ActionAdd(Action):
             return []
         username = username.lower()
 
-        id = int(tracker.get_slot("slot_id"))
-        #id = hash_functions(username)
+        if not ONLY_BOT:
+            id = int(tracker.get_slot("slot_id"))
+        else:
+            id = hash_functions(username)
+
         if data.get(id) is None:
             data[id] = {username:{}}
 
@@ -166,9 +174,10 @@ class ActionRemove(Action):
             dispatcher.utter_message(text="Please give me your name") 
             return []
         username = username.lower()
-        id = int(tracker.get_slot("slot_id"))
-        #id = hash_functions(username)
-
+        if not ONLY_BOT:
+            id = int(tracker.get_slot("slot_id"))
+        else:
+            id = hash_functions(username)
         if data.get(id) is not None:
             try:
                 data[id][username][item_name] -= item_quantity
@@ -219,8 +228,10 @@ class ActionUpdate(Action):
             dispatcher.utter_message(text="Please give me your name") 
             return []
         username = username.lower()
-        id = int(tracker.get_slot("slot_id"))
-        #id = hash_functions(username)
+        if not ONLY_BOT:
+            id = int(tracker.get_slot("slot_id"))
+        else:
+            id = hash_functions(username)
 
         if data.get(id) is None:
             data[id] = {username:{}}
@@ -253,9 +264,10 @@ class ActionEmpty(Action):
             dispatcher.utter_message(text="Please give me your name") 
             return []
         username = username.lower()
-        id = int(tracker.get_slot("slot_id"))
-        #id = hash_functions(username)
-        
+        if not ONLY_BOT:
+            id = int(tracker.get_slot("slot_id"))
+        else:
+            id = hash_functions(username)
         
         try:
             data[id][username] = {}

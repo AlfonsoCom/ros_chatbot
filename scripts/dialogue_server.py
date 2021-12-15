@@ -45,27 +45,45 @@ class DialogueServer:
         self.user_messanger = UserMessanger()
     
     def _set_id_username_slot(self, username, id):
-        if (not self.user_messanger.isUserDefined() and username != '') or (self.user_messanger.getID()!=id and username != ''):
+        """
+        Sets id and name of the user through post request
+        """
+        #if (not self.user_messanger.isUserDefined() and username != '') or (self.user_messanger.getID()!=id and username != ''):
+        if username is "":
+            username = None
+        
+        ## vedi se rimane settato -1
+        url = 'http://localhost:5002/conversations/bot/tracker/events?include_events=NONE'
+        
+        msg = ({"event":"slot","name":"slot_id","value":str(id),"timestamp":0},{"event":"slot","name":"username","value":username,"timestamp":0})
+        self.user_messanger.setID(id)
+        self.user_messanger.setUsername(username)
+        # set slots
+        r1 = requests.post(url, json=msg)
+       
+        print("[DialogueServer_SET] ","id -->", self.user_messanger.getID(), " username -->", self.user_messanger.getUsername())
+        
 
-            url = 'http://localhost:5002/conversations/bot/tracker/events?include_events=NONE'
-            
-            msg = ({"event":"slot","name":"slot_id","value":str(id),"timestamp":0},{"event":"slot","name":"username","value":username,"timestamp":0})
-            self.user_messanger.setID(id)
-            self.user_messanger.setUsername(username)
-            # set slots
-            r1 = requests.post(url, json=msg)
 
     def _get_id_username_slot(self):
+        """
+        Returns id and name from the bot through a get request
+        """
          # get info slot username
         url = "http://localhost:5002/conversations/bot/tracker"
         r1 = requests.get(url=url)
         username = r1.json()["slots"]["username"]
         id = r1.json()["slots"]["slot_id"] #check if it is an int
-        print("Bot id -----------------------> ",id)
+        print("[DialogueServer_GET]","id -->", id, " username -->", username)
+
         
         return username, id
 
-    def handle_dialogue(self,req):
+    def _handle_dialogue(self,req):
+        """
+        Allows comunication with the bot. sets name and label of the user . Returns response, 
+        label and names of the user.
+        """
         input_text = req.input_text  
         username = req.username
         id = req.id
@@ -110,7 +128,7 @@ class DialogueServer:
         rospy.init_node('dialogue_service')
 
         s = rospy.Service('dialogue_server',
-                            Dialogue, self.handle_dialogue)
+                            Dialogue, self._handle_dialogue)
 
         rospy.logdebug('Dialogue server READY.')
         rospy.spin()

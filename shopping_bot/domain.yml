@@ -1,6 +1,6 @@
 version: '2.0'
 session_config:
-  session_expiration_time: 1
+  session_expiration_time: 60
   carry_over_slots_to_new_session: false
 intents:
 - empty
@@ -38,8 +38,8 @@ slots:
 responses:
   utter_greet:
   - text: Hey {username}! How I can help you?
-  - text: Hi {username}. What are you looking for?
-  - text: Hello {username}! What can I help you find today?
+  - text: Hello {username}!
+  - text: Hi {username}! 
   utter_noworries:
   - text: My pleasure.
   - text: You are welcome!
@@ -49,10 +49,10 @@ responses:
   - text: By {username}, Have a good day.
   - text: Until next time!
   utter_ask_item_name:
-  - text: Can you please tell me the name of the item?
-  - text: What item do you want?
+  - text: Tell me the item name?
+  - text: What do you want?
   utter_ask_item_quantity:
-  - text: How?
+  - text: How many?
   - text: In what number?
   - text: Tell me the quantity.
   utter_please_rephrase:
@@ -61,9 +61,7 @@ responses:
   utter_intent:
   - text: What action want to do?
   utter_ask_username:
-  - text: Please, give me your name. I don't know who you are.
   - text: What's your name?
-  - text: Who are you?
 actions:
 - action_add
 - action_empty

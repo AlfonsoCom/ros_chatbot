@@ -3,8 +3,8 @@
 .vscode/
 
 # models
-shopping_bot/models
-# shopping_bot/database
+#shopping_bot/models
+shopping_bot/database
 
 
 # Byte-compiled / optimized / DLL files
