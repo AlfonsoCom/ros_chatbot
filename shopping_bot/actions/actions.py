@@ -5,7 +5,6 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
 import pickle
-import os
 import logging
 from word2number import w2n
 from pattern.text.en import singularize
@@ -13,15 +12,17 @@ import pathlib
 
 logging.getLogger(__name__)
 
-ONLY_BOT = False
 
+ONLY_BOT = False
 FILE_PATH = str(pathlib.Path(__file__).parent.resolve()) + "/../database/data.pk"
+
 
 def hash_functions(s):
     i =0
     for j in range(len(s)):
         i+=ord(s[j])
     return i
+
 
 def load_data(file_path=FILE_PATH):
     """If the data exist load the data from a db (represented by a dict(str[name] -> int[quantity])).
@@ -53,28 +54,23 @@ class ActionShow(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         data = None
-        
         data_all_user = load_data()
         
         username = tracker.get_slot("username")
         username = username.lower()
+
         if not ONLY_BOT:
             id = int(tracker.get_slot("slot_id"))
         else:
             id = hash_functions(username)
+        
         if username is None:
             dispatcher.utter_message(text="Please give me your name") 
             return []
 
-        
-        #id = hash_functions(username)
-       
-        print(username,id,data_all_user)
-
         if data_all_user.get(id) is not None: #is not empty
             # Compose the show message
-            data = data_all_user[id][username]
-            
+            data = data_all_user[id]
             
             text = "Your shopping list:\n "
             for k in data.keys():
@@ -83,7 +79,7 @@ class ActionShow(Action):
         else:
             text = "Your shopping list is empty!"      
         
-        dispatcher.utter_message(text=f"{text}") 
+        dispatcher.utter_message(text=text) 
         return [SlotSet("item_name", None), SlotSet("item_quantity", None)]
         
      
@@ -111,10 +107,9 @@ class ActionAdd(Action):
             return [SlotSet("item_name", None), SlotSet("item_quantity", None)]
 
         item_name = singularize(tracker.get_slot("item_name")) # item name be converted in singular
-        
-        
-           
+                  
         data = load_data(FILE_PATH)
+
         username = tracker.get_slot("username")
         if username is None:
             dispatcher.utter_message(text="Please give me your name") 
@@ -127,17 +122,16 @@ class ActionAdd(Action):
             id = hash_functions(username)
 
         if data.get(id) is None:
-            data[id] = {username:{}}
-
+            data[id] = {}
 
         try:
-            data[id][username][item_name] += item_quantity
+            data[id][item_name] += item_quantity
         except KeyError:
-            data[id][username][item_name] = item_quantity
+            data[id][item_name] = item_quantity
 
         save_data(data)
 
-        msg = f"The item {item_name} is correctly added to your shopping list. Now you have {data[id][username][item_name]} {item_name}"
+        msg = f"The item {item_name} is correctly added to your shopping list. Now you have {data[id][item_name]} {item_name}"
         
         dispatcher.utter_message(text=msg) 
         return [SlotSet("item_name", None), SlotSet("item_quantity", None)]
@@ -167,30 +161,29 @@ class ActionRemove(Action):
             return [SlotSet("item_name", None), SlotSet("item_quantity", None)]
 
         item_name = singularize(tracker.get_slot("item_name")) # item name be converted in singular
-
         data = load_data()
+
         username = tracker.get_slot("username")
         if username is None:
             dispatcher.utter_message(text="Please give me your name") 
             return []
         username = username.lower()
+
         if not ONLY_BOT:
             id = int(tracker.get_slot("slot_id"))
         else:
             id = hash_functions(username)
-        if data.get(id) is not None:
-            try:
-                data[id][username][item_name] -= item_quantity
-                if data[id][username][item_name] <= 0:
-                    del data[id][username][item_name]
-                    msg = f"Now in your shopping list there are no {item_name} left"
-                else:
-                    msg = f"In your shopping list there are {data[id][username][item_name]} {item_name} left"
 
-            except KeyError:
-                msg = f"In your shopping list there isn't any {item_name} items"
-        else:
-            msg = f"There is no shopping list associated to this user -> {username}"
+        try:
+            data[id][item_name] -= item_quantity
+            if data[id][item_name] <= 0:
+                del data[id][item_name]
+                msg = f"Now in your shopping list there are no {item_name} left"
+            else:
+                msg = f"In your shopping list there are {data[id][item_name]} {item_name} left"
+
+        except KeyError:
+            msg = f"In your shopping list there isn't any {item_name} items"
 
         save_data(data)
         
@@ -221,29 +214,33 @@ class ActionUpdate(Action):
             # Managment when NLU detect a word that is not a number like item_quantity
             dispatcher.utter_message(text="Please can you reprhase?") 
             return [SlotSet("item_quantity", None)]
+
         item_name = singularize(tracker.get_slot("item_name")) # item name be converted in singular
         data = load_data(FILE_PATH)
+
         username = tracker.get_slot("username")
         if username is None:
             dispatcher.utter_message(text="Please give me your name") 
             return []
         username = username.lower()
+
         if not ONLY_BOT:
             id = int(tracker.get_slot("slot_id"))
         else:
             id = hash_functions(username)
 
         if data.get(id) is None:
-            data[id] = {username:{}}
+            data[id] = {}
         
-        data[id][username][item_name] = item_quantity
+        data[id][item_name] = item_quantity
 
         save_data(data)
 
-        msg = f"The item {item_name} is correctly updated to your shopping list. Now you have {data[id][username][item_name]} {item_name}"
+        msg = f"The item {item_name} is correctly updated to your shopping list. Now you have {data[id][item_name]} {item_name}"
         
         dispatcher.utter_message(text=msg) 
         return [SlotSet("item_name", None), SlotSet("item_quantity", None)]
+
 
 class ActionEmpty(Action):
     """RASA action. Recive the username. Load the data; clean out the data of the user; 
@@ -256,24 +253,25 @@ class ActionEmpty(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-       
-
+        
         data = load_data()
+
         username = tracker.get_slot("username")
         if username is None:
             dispatcher.utter_message(text="Please give me your name") 
             return []
         username = username.lower()
+
         if not ONLY_BOT:
             id = int(tracker.get_slot("slot_id"))
         else:
             id = hash_functions(username)
         
         try:
-            data[id][username] = {}
+            data[id].clear()
             msg = f"Your list is empty"
         except KeyError:
-            msg = f"There is no shopping list associated to you"
+            msg = f"Your list is empty"
 
         save_data(data)
         
